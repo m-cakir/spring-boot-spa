@@ -1,4 +1,4 @@
-package com.mcakir.model;
+package com.mcakir.domain;
 
 import lombok.Data;
 

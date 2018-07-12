@@ -1,6 +1,6 @@
 package com.mcakir.repository;
 
-import com.mcakir.model.BaseModel;
+import com.mcakir.domain.BaseModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.NoRepositoryBean;
