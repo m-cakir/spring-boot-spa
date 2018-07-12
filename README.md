@@ -1,4 +1,4 @@
-# spring-boot-spa
+# spring-boot-spa (work-in-progress 🔧️⛏)
 Single Page Application via Spring Boot &amp; Angular 2+ 
 
 # Built with
