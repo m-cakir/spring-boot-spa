@@ -4,10 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --deploy-url /static/ --prod",
+    "pre-build": "ng build --deploy-url /static/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "npm run build & npm run _move-images & npm run _move-sources & echo 'build and copy files finished'",
+    "_move-sources": "copyfiles -e dist/assets/** -f dist/** ../src/main/resources/static",
+    "_move-images": "copyfiles -f dist/assets/** ../src/main/resources/static/assets/images"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +47,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
-    "tslint": "~5.9.1"
+    "tslint": "~5.9.1",
+    "copyfiles": "^2.0.0"
   }
 }
