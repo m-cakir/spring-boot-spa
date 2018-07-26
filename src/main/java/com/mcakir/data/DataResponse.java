@@ -7,8 +7,8 @@ import org.springframework.data.domain.Page;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
 @NoArgsConstructor
+@Data
 public class DataResponse<T> {
 
     private long totalElements;
