@@ -1,0 +1,14 @@
+{
+  "name": "Single Page Application",
+  "description": "Single Page Application via Spring Boot & Angular 2+",
+  "repository": "https://github.com/m-cakir/spring-boot-spa",
+  "image": "heroku/java",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-java"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}

@@ -102,6 +102,23 @@
 				<version>1.5.0</version>
 				<executions>
 					<execution>
+						<id>install-npm</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<phase>initialize</phase>
+						<configuration>
+							<executable>cmd</executable>
+							<workingDirectory>${project.basedir}/ui</workingDirectory>
+							<arguments>
+								<argument>/C</argument>
+								<argument>npm</argument>
+								<argument>install</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>build-npm</id>
 						<goals>
 							<goal>exec</goal>
 						</goals>
