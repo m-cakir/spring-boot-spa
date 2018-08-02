@@ -11,7 +11,8 @@
     "e2e": "ng e2e",
     "deploy": "npm run build & npm run _move-images & npm run _move-sources & echo 'build and copy files finished'",
     "_move-sources": "copyfiles -e dist/assets/** -f dist/** ../src/main/resources/static",
-    "_move-images": "copyfiles -f dist/assets/** ../src/main/resources/static/assets/images"
+    "_move-images": "copyfiles -f dist/assets/** ../src/main/resources/static/assets/images",
+    "heroku-postbuild": "ng build --deploy-url /static/ --prod --output-path=../src/main/resources/static"
   },
   "private": true,
   "dependencies": {
