@@ -5,10 +5,7 @@
   "image": "heroku/java",
   "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-java"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+      "url": "https://github.com/negativetwelve/heroku-buildpack-subdir"
     }
   ]
 }
