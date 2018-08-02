@@ -6,6 +6,6 @@ Single Page Application via Spring Boot &amp; Angular 2+
 * Angular CLI: 6.0.8
 * Node: 8.9.3
 
-## Deployment (not working for now)
+## Deployment
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
